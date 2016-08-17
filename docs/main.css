@@ -1,0 +1,28 @@
+.navbar-left-link,.navbar-right-link{
+    background-color: #b11a1a;
+    height: 46px;
+    line-height: 46px;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    padding: 0 20px;
+}
+body{
+    background-color: #f4f4f4;
+}
+.wraper{
+    width: 1200px;
+    margin: 10px auto;
+    background-color: #fff;
+}
+.all-goods{
+    display: block;
+    line-height: 46px;
+    background-color: #b10c0c;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 20px 0 10px;
+}
+.content li{
+    margin-bottom: 20px;
+}

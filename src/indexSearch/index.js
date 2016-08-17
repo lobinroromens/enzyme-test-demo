@@ -9,8 +9,8 @@ class IndexSearch extends React.Component {
     const searchValue = getFieldValue("searchValue");
     this.searchBtnSubmit = this.searchBtnSubmit.bind(this,{selectValue:selectValue,searchValue:searchValue});
   };
-  searchBtnSubmit(){
-    return this.props.searchBtnSubmit;
+  searchBtnSubmit(param){
+    return this.props.searchBtnSubmit(param);
   };
   render() {
     const {
@@ -27,13 +27,14 @@ class IndexSearch extends React.Component {
             <div className="index-search">
                 <Form inline onSubmit={this.searchBtnSubmit}>
                   <Select
-                     defaultValue={selectDefault}
+                     defaultValue={{ key: selectOptions[0] }}
                      className="index-search-before"
+                      placeholder="请选择类别"
                      {...getFieldProps('selectValue')}
                   >
-                     {
-                      selectOptions.map((item,index)=>{<Option value={item} key={index}>{item}</Option>})
-                     }
+                  {
+                      selectOptions.map((item,index)=><Option value={item} key={index}>{item}</Option>)
+                  }
                   </Select>
                   <Input
                      className="index-search-input"
