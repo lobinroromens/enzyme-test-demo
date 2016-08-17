@@ -1,0 +1,43 @@
+@import "../../style/themes/default";
+@import "../../style/mixins/index";
+// navbar
+.@{Navbar-prefix-cls}{
+    width: 100%;
+    background-color: @NavbarBgColor;
+    height: @NavbarHeight;
+    .clearfix();
+    &-wraper{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    &-content{
+        float: left;
+        overflow: hidden;
+    }
+    &-left{
+        float: left;
+    }
+    &-right{
+        float: right;
+    }
+    &-item{
+        float: left;
+        line-height: @NavbarHeight;
+        width: 120px;
+        text-align: center;
+    }
+    &-link{
+        color: @NavbarLinkColor;
+        font-size: 18px;
+        border-right: 1px solid #8d0909;
+        width: 120px;
+        text-align: center;
+        line-height: 18px;
+        margin-right: -1px;
+        display: inline-block;
+        box-shadow: 1px 0 0 #e85f61;
+        &:hover{
+            color: @NavbarLinkHoverColor;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "enzyme-test-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/.setup.js ./test/**/*.test.js",
+    "start": "bisheng start -c ./site/bisheng.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^1.9.0",
+    "bluebird": "^3.4.1",
+    "classnames": "^2.2.5",
+    "intl": "^1.2.4",
+    "intl-locales-supported": "^1.0.0",
+    "lodash.debounce": "^4.0.8",
+    "rc-scroll-anim": "^0.3.5",
+    "react": "^15.3.0",
+    "react-copy-to-clipboard": "^4.2.3",
+    "react-document-title": "^2.0.2",
+    "react-dom": "^15.3.0",
+    "react-github-button": "^0.1.9",
+    "react-intl": "^2.1.3",
+    "react-router": "^2.6.1"
+  },
+  "devDependencies": {
+    "amdefine": "^1.0.0",
+    "atom-ui-reporter": "0.0.1",
+    "atool-build": "^0.8.0",
+    "babel": "^6.5.2",
+    "babel-plugin-antd": "^0.5.1",
+    "babel-preset-airbnb": "^2.0.0",
+    "babel-register": "^6.11.6",
+    "bisheng": "^0.12.1",
+    "bisheng-plugin-antd": "^0.2.2",
+    "bisheng-plugin-description": "^0.1.1",
+    "bisheng-plugin-react": "^0.2.0",
+    "bisheng-plugin-toc": "^0.4.0",
+    "chai": "^3.5.0",
+    "char": "^0.0.0-reserved",
+    "dora": "^0.4.3",
+    "dora-plugin-upload": "^0.3.2",
+    "enzyme": "^2.4.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "jsdom": "^9.4.2",
+    "mocha": "^3.0.2",
+    "react-addons-test-utils": "^15.3.0"
+  }
+}
